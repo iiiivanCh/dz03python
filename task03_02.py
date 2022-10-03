@@ -5,6 +5,7 @@
 # - [2, 3, 5, 6] => [12, 15]
 
 import random
+import copy
 
 
 def get_user_number(str_1):
@@ -25,7 +26,7 @@ def get_user_random_list(arr_len):
 
 
 def get_product_pairs_list_number(arr):
-    arr_new = arr[:]
+    arr_new = copy.deepcopy(arr)
     arr_list = []
     while len(arr_new) > 0:
         if len(arr_new) > 1:
